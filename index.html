@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
-  <link disabled media="all" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel=preconnect media="all" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
   <script async>
     'use strict'
     document.cookie = "SameSite=Lax; Secure"
@@ -40,6 +40,14 @@
             }
 
           })
+        })
+        const precarga = document.querySelectorAll("iframe")
+        const dist = [...precarga]
+        dist.map(item=>{
+          item.style.visibility="hidden"
+          setTimeout(()=>{
+            item.style.visibility="visible"
+          }, 300)
         })
       }
     }
