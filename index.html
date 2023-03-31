@@ -10,6 +10,27 @@
   <link rel=preconnect media="all" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
   <script async>
     'use strict'
+    const precarga = document.querySelectorAll("iframe")
+        const dist = [...precarga]
+        dist.map(item=>{
+          item.style.visibility="hidden"
+          setTimeout(()=>{
+            item.style.visibility="visible"
+          }, 300)
+        })
+
+        const img = document.querySelectorAll("img")
+        const ims = [...img]
+        ims.map(item=>{
+          item.style.visibility="hidden"
+          setTimeout(()=>{
+            item.style.visibility="visible"
+          }, 300)
+        })
+
+
+
+
     document.cookie = "SameSite=Lax; Secure"
     window.addEventListener("DOMContentLoaded", scrollAnimation)
     function scrollAnimation() {
@@ -41,14 +62,7 @@
 
           })
         })
-        const precarga = document.querySelectorAll("iframe")
-        const dist = [...precarga]
-        dist.map(item=>{
-          item.style.visibility="hidden"
-          setTimeout(()=>{
-            item.style.visibility="visible"
-          }, 300)
-        })
+        
       }
     }
   </script>
@@ -57,7 +71,7 @@
 <body>
   <nav class="Navbar  text-white">
     <div class="logo">
-      <img  class="lazyload" data-src="ico.png" alt="Logo">
+      <img  src="ico.png" alt="Logo">
       <span>G8 Proyectos Energeticos</span>
     </div>
     <div class="menu-mo">
@@ -199,7 +213,7 @@
     <div class="content">
       <div class="contentido">
         <div class="logo">
-          <img class="lazyload" data-src="ico.png" alt="Logo">
+          <img src="ico.png" alt="Logo">
           <span>G8 Proyectos Energeticos</span>
         </div>
         </div>
@@ -231,8 +245,8 @@
           <div class="contentido">
             <h4>Siguenos</h4>
             <div class="social">
-              <a href=""><img class="lazyload" data-src="facebook.svg" alt=""></a>
-              <a href=""><img class="lazyload" data-src="instagram.svg" alt=""></a>
+              <a href=""><img src="facebook.svg" alt=""></a>
+              <a href=""><img src="instagram.svg" alt=""></a>
             </div>
           </div>
         </div>
@@ -269,7 +283,6 @@
 
   </script>
 
-<script src="lazysizes.min.js" async></script>
 <!-- Images End -->
 </body>
 </body>
