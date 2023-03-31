@@ -250,8 +250,8 @@ h6 {
 
 }
 
-.social>a {
-  font-size: 2rem;
+.social> a img{
+ width: 2.3rem;
 }
 
 
@@ -449,7 +449,6 @@ a {
 
 @media screen and (max-width:1780px) {
 
-
   .card-pub {
     padding: 1.5rem;
     margin: auto;
@@ -620,16 +619,18 @@ a {
     padding: 0;
 
   }
+  .social> a img{
+    width: 2.3rem;
+   }
 
 }
 
 @media screen and (max-width:750px) {
-
   /*Banner Publicidad*/
-
   .section-pub{
     padding-top: 22%;
   }
+  
 
   .card-pub h1{
     font-size: 2.5rem;
@@ -718,4 +719,7 @@ a {
   .copy{
     font-size: 1.6rem;
   }
+  .social> a img{
+    width: 3rem;
+   }
 }
