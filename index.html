@@ -15,8 +15,10 @@
         dist.map(item=>{
           item.style.visibility="hidden"
           setTimeout(()=>{
-            item.style.visibility="visible"
-          }, 500)
+            window.onload = setTimeout(()=>{
+              item.style.visibility="visible"
+            },0)
+          }, 1500)
         })
 
         const img = document.querySelectorAll("img")
@@ -24,8 +26,10 @@
         ims.map(item=>{
           item.style.visibility="hidden"
           setTimeout(()=>{
-            item.style.visibility="visible"
-          }, 500)
+            window.onload = setTimeout(()=>{
+              item.style.visibility="visible"
+            },0)
+          }, 1500)
         })
 
 
@@ -71,7 +75,7 @@
 <body>
   <nav class="Navbar  text-white">
     <div class="logo">
-      <img  src="ico.png" alt="Logo">
+      <img  src="ico.webp" alt="Logo">
       <span>G8 Proyectos Energeticos</span>
     </div>
     <div class="menu-mo">
@@ -213,7 +217,7 @@
     <div class="content">
       <div class="contentido">
         <div class="logo">
-          <img src="ico.png" alt="Logo">
+          <img src="ico.webp" alt="Logo">
           <span>G8 Proyectos Energeticos</span>
         </div>
         </div>
@@ -245,8 +249,8 @@
           <div class="contentido">
             <h4>Siguenos</h4>
             <div class="social">
-              <a href=""><img src="facebook.svg" alt=""></a>
-              <a href=""><img src="instagram.svg" alt=""></a>
+              <a href=""><img src="facebook.webp" alt=""></a>
+              <a href=""><img src="instagram.webp" alt=""></a>
             </div>
           </div>
         </div>
