@@ -8,68 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
   <link rel=preconnect media="all" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <script async>
-    'use strict'
-    const precarga = document.querySelectorAll("iframe")
-        const dist = [...precarga]
-        dist.map(item=>{
-          item.style.visibility="hidden"
-          setTimeout(()=>{
-            window.onload = setTimeout(()=>{
-              item.style.visibility="visible"
-            },0)
-          }, 1500)
-        })
-
-        const img = document.querySelectorAll("img")
-        const ims = [...img]
-        ims.map(item=>{
-          item.style.visibility="hidden"
-          setTimeout(()=>{
-            window.onload = setTimeout(()=>{
-              item.style.visibility="visible"
-            },0)
-          }, 1500)
-        })
-
-
-
-
-    document.cookie = "SameSite=Lax; Secure"
-    window.addEventListener("DOMContentLoaded", scrollAnimation)
-    function scrollAnimation() {
-      window.addEventListener("scroll", () => {
-        window.scrollY > 30 ? document.querySelector(".Navbar").classList.add('Navbar-decoration') : document.querySelector(".Navbar").classList.remove('Navbar-decoration')
-        if(window.innerWidth <= 850){
-          window.scrollY > 450 ? document.querySelector(".Navbar").style.display="none" : document.querySelector(".Navbar").style.display="flex"
-        }else{
-          document.querySelector(".Navbar").style.display="flex"
-        }
-      })
-
-      window.onload = () => {
-        var click = false
-        const menusAcordion = document.querySelectorAll(".menuacor")
-        const acordion = [...menusAcordion]
-        acordion.map(item => {
-          item.addEventListener("click", e => {
-            const desplegar = item.querySelector(".Acordion")
-            if (click) {
-              desplegar.classList.add("d-none")
-              desplegar.classList.remove("d-block")
-              click = false
-            } else {
-              desplegar.classList.remove("d-none")
-              desplegar.classList.add("d-block")
-              click = true
-            }
-
-          })
-        })
-        
-      }
-    }
-  </script>
+ <script async>'use strict' const precarga=document.querySelectorAll("iframe") const dist=[...precarga] dist.map(item=>{ item.style.visibility="hidden" setTimeout(()=>{ window.onload=setTimeout(()=>{ item.style.visibility="visible"},0)}, 1500)}) const img=document.querySelectorAll("img") const ims=[...img] ims.map(item=>{ item.style.visibility="hidden" setTimeout(()=>{ window.onload=setTimeout(()=>{ item.style.visibility="visible"},0)}, 1500)}) document.cookie="SameSite=Lax; Secure" window.addEventListener("DOMContentLoaded", scrollAnimation) function scrollAnimation(){ window.addEventListener("scroll", ()=>{ window.scrollY >30 ? document.querySelector(".Navbar").classList.add('Navbar-decoration') : document.querySelector(".Navbar").classList.remove('Navbar-decoration') if(window.innerWidth <=850){ window.scrollY >450 ? document.querySelector(".Navbar").style.display="none" : document.querySelector(".Navbar").style.display="flex"}else{ document.querySelector(".Navbar").style.display="flex"}}) window.onload=()=>{ var click=false const menusAcordion=document.querySelectorAll(".menuacor") const acordion=[...menusAcordion] acordion.map(item=>{ item.addEventListener("click", e=>{ const desplegar=item.querySelector(".Acordion") if (click){ desplegar.classList.add("d-none") desplegar.classList.remove("d-block") click=false} else{ desplegar.classList.remove("d-none") desplegar.classList.add("d-block") click=true}})})}} </script>
 </head>
 
 <body>
@@ -266,26 +205,7 @@
 
 
 
-  <script async>
-    'use strict'
-    const menu = document.querySelector(".menu-mo")
-    const menucl = document.querySelector(".menu-cl")
-    const navbar = document.querySelector("nav")
-    
-    menu.addEventListener("click", e =>{
-      const ul = navbar.querySelector("ul")
-      ul.classList.add("show")
-      ul.classList.remove("fade")
-      menucl.style.display="block"
-    })
-    menucl.addEventListener("click", e =>{
-      const ul = navbar.querySelector("ul")
-      ul.classList.remove("show")
-      ul.classList.add("fade")
-      menucl.style.display="none"
-    })
-
-  </script>
+ <script async>'use strict' const menu=document.querySelector(".menu-mo") const menucl=document.querySelector(".menu-cl") const navbar=document.querySelector("nav") menu.addEventListener("click", e=>{ const ul=navbar.querySelector("ul") ul.classList.add("show") ul.classList.remove("fade") menucl.style.display="block"}) menucl.addEventListener("click", e=>{ const ul=navbar.querySelector("ul") ul.classList.remove("show") ul.classList.add("fade") menucl.style.display="none"}) </script>
 
 <!-- Images End -->
 </body>
