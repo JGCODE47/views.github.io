@@ -1,0 +1,721 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+#root {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+
+}
+
+
+body {
+  background-color: rgba(2, 92, 23, 0.292);
+  font-weight: 300;
+}
+
+
+#banner {
+  background-position: top;
+  background: url('imgbanner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+}
+
+div .publicidad-banner {
+  width: 100%;
+  height: 100vh;
+}
+
+#banner::before {
+  content: '';
+  background: rgba(2, 2, 7, 0.525);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.section-pub {
+  padding-top: 16%;
+  width: 100%;
+}
+
+
+
+.card-pub {
+  padding: 1.5rem;
+  margin: auto;
+  text-align: center;
+  border-radius: 0.3rem;
+  backdrop-filter: blur(2px);
+}
+
+.card-pub>h1 {
+  padding: 0.9rem 0;
+  font-size: 2.3rem;
+  font-weight: 900;
+  box-shadow: 15px;
+}
+
+.card-pub>p {
+  padding-bottom: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.card-pub > .btn{
+  padding: 1rem 1rem;
+  font-size: 2rem;
+}
+
+
+
+/*Menu de navegacion */
+nav {
+  position: fixed;
+  z-index: 1080;
+}
+
+.Navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.6rem;
+  transition: all .5s ease-in-out
+}
+
+.Navbar-decoration {
+  background-color: rgba(1, 58, 22, 0.84);
+  box-shadow: 0 0 25px 5px rgb(0, 0, 0);
+
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  flex-wrap: nowrap;
+}
+
+.logo>img {
+  width: 1.9rem;
+  padding: 0 0.2rem;
+}
+
+.logo>span {
+  width: 100%;
+  font-size: 1.1rem;
+  text-align: start;
+  font-weight: 700;
+}
+
+.Navbar>ul {
+  display: flex;
+  gap: 0.9rem;
+  padding: 0.6rem;
+  list-style: none;
+}
+
+.Navbar>ul>li>a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/*Acordiones*/
+.menuacor>a::after {
+  content: '\025bc';
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.Acordion {
+  width: 10rem;
+  position: fixed;
+  z-index: 100;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.596);
+
+}
+
+.Acordion>ul {
+  padding: 0;
+}
+
+.Acordion>ul>li,
+.itemAcordion {
+  border: 1px solid blanchedalmond;
+  list-style: none;
+  padding: 0 0.9rem;
+}
+
+
+
+
+
+
+/*Menus de navegacion */
+
+
+
+
+
+
+/*Pie de pagina*/
+footer {
+  width: 100%;
+  padding: 1rem 1rem;
+  background-color: rgb(0, 146, 54);
+  color: rgb(31, 33, 33);
+  margin: auto;
+  background-image: url(footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pie {
+  display: grid;
+  padding: 1rem 0;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+}
+
+
+
+.navb {
+  display: flex;
+  flex-direction: column;
+  padding: 0.4rem 0;
+}
+
+.navb>ul,
+li {
+  list-style: none;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.navb>.list,
+.item {
+  color: black;
+}
+
+
+.contenido {
+  width: 100%;
+  height: 3vh;
+}
+
+.contenido>h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 0.5rem 0;
+}
+
+
+
+.contenido,
+.logo>span {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.social {
+  display: flex;
+  align-items: start;
+  top: 0;
+  flex-direction: row;
+  gap: 0.5rem;
+
+}
+
+.social>a {
+  font-size: 2rem;
+}
+
+
+
+
+.copy {
+  font-size: 1.1rem;
+  font-weight: 300;
+  width: 100%;
+  text-align: center;
+  color: rgb(17, 67, 51);
+  box-shadow: 5px;
+  padding: 0.3rem;
+  ;
+
+}
+
+/*Contenedor principal*/
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.ifremeVideos {
+  width: 40rem;
+  height: 20rem;
+}
+
+.section-e {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Utilidades*/
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+  color: rgb(222, 254, 244);
+
+}
+
+
+.text-white,
+a {
+  text-decoration: none;
+  color: rgb(222, 254, 244);
+}
+
+.text-dark {
+  color: rgb(0, 0, 0);
+}
+
+.text-green {
+  color: rgb(0, 177, 65);
+}
+
+.bg-green {
+  color: rgb(98, 250, 154);
+}
+
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0.541);
+}
+
+.bg-grey {
+  background-color: rgba(128, 128, 128, 0.139);
+}
+
+
+.btn {
+  border: none;
+  padding: 0.9rem;
+  border-radius: 0.5rem;
+}
+
+.btn-success {
+  color: rgb(187, 255, 234);
+  background-color: rgb(27, 194, 88);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all .5s ease-in-out
+}
+
+.btn-success:hover {
+  color: rgb(253, 255, 253);
+  box-shadow: 0 0 11px 6px rgba(67, 255, 10, 0.479);
+  background-color: rgb(3, 248, 23);
+}
+
+.menu-mo {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-cl{
+  display: none;
+  cursor: pointer;
+}
+
+.ico-menu {
+  display: inline-block;
+  background-image: url(img/ico/menu.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: green;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.ico-close {
+  display: inline-block;
+  background-image: url(img/ico/close.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+
+
+/*fin utilidades*/
+
+.division {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding: 2rem 2rem;
+}
+
+.subtitle {
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+.card {
+  width: 100%;
+  height: auto;
+  background: rgb(242, 255, 245);
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+}
+
+.card-title {
+  padding: 1rem 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.card-body {
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 1rem 1rem;
+}
+
+.cardsdw {
+  box-shadow: 0px 0px 0px 0px;
+  transition: all .5s cubic-bezier(0.42, 0, 0.17, 0.93);
+}
+
+.cardsdw:hover {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.493);
+}
+
+.j-tool {
+  width: 33.3%;
+}
+
+
+/*configuraciones de pantalla*/
+
+
+
+@media screen and (max-width:1780px) {
+
+
+  .card-pub {
+    padding: 1.5rem;
+    margin: auto;
+    text-align: center;
+    border-radius: 0.3rem;
+    backdrop-filter: blur(2px);
+  }
+  
+  .card-pub>h1 {
+    padding: 0.9rem 0;
+    font-size: 2.5rem;
+    font-weight: 900;
+    box-shadow: 15px;
+  }
+  
+  .card-pub>p {
+    padding-bottom: 3rem;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+  
+  .card-pub > .btn{
+    padding: 1.7rem 1.7rem;
+    font-size: 1.5rem;
+  }
+  .content{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+  }
+  
+}
+
+@media screen and (max-width:900px) { 
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+/*Banner Publicidad*/
+
+  .section-pub{
+    padding-top: 40%;
+  }
+
+  .card-pub h1{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .card-pub p {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .card-pub .btn{
+    font-size: 2.5rem;
+  }
+
+  .division{
+    flex-direction: column;
+    margin: 0;
+  }
+  .card{
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+  .card-body{
+    padding: 0;
+  }
+  .card-title{
+    font-size: 2rem;
+    padding-left: 0;
+    padding-bottom:1rem;
+  }
+  .card-body > p {
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+
+  /*funciones menu*/
+  .menu-mo{
+    display: block;
+  }
+  .Navbar {
+    margin: 0;
+    padding: 2rem 2rem;
+  }
+
+  .Navbar>ul {
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    width: 100%;
+    margin: auto;
+    gap: 4rem;
+    transition: all 0.5s ease-in-out;
+   
+  }
+
+ .Navbar > ul li a{
+  color: black;
+  font-size: 2rem;
+ }
+
+  .logo img {
+    width: 3rem;
+  }
+
+  .logo>span {
+    display: none;
+  }
+
+  .menu-cl{
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+  }
+  .ico-menu{
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .show{
+    left: 0 !important;
+
+  }
+  .fade{
+    left:100%  !important;
+  }
+
+  iframe{
+    width: 100%;
+    height: 30rem;
+  }
+  .navb .list .item{
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .copy{
+    font-size: 1.9rem;
+  }
+
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .contenido{
+    padding: 0;
+    width: 100%;
+  }
+  .contenido , h4{
+    font-size: 2rem;
+  }
+
+  .pie{
+    padding: 0;
+
+  }
+
+}
+
+@media screen and (max-width:750px) {
+
+  /*Banner Publicidad*/
+
+  .section-pub{
+    padding-top: 22%;
+  }
+
+  .card-pub h1{
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .card-pub p {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .card-pub .btn{
+    font-size: 1.5rem;
+  }
+  
+
+  .card{
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+
+
+  .Navbar>ul {
+        gap: 1.2rem;  
+   
+  }
+
+  .Navbar > ul li a{
+    color: black;
+    font-size: 1.3rem;
+   }
+
+   .ico-close {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .division{
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .section-card{
+    padding: 2rem 0;
+  }
+  iframe{
+    width: 100%;
+    height: 250px;
+  }
+  .Navbar{
+    width: 100%;
+   padding: 1rem 1rem;
+  }
+
+  .menu-mo{
+    padding: 0;
+  }
+  .ico-menu{
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .logo img {
+    width: 3rem;
+  }
+
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contenido{
+    padding: 0;
+    width: 100%;
+  }
+  .pie{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+  .navb .list .item{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .copy{
+    font-size: 1.6rem;
+  }
+}
