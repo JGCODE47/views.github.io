@@ -596,8 +596,8 @@ a {
 
   .menu-cl{
     position: fixed;
-    top: 3rem;
-    right: 3rem;
+    top: 2rem;
+    right: 2rem;
   }
   .ico-menu{
     width: 2.5rem;
@@ -710,8 +710,8 @@ a {
    }
 
    .ico-close {
-    width: 2rem;
-    height: 2rem;
+    width: 1.7rem;
+    height: 1.7rem;
   }
 
   .division{
@@ -735,11 +735,11 @@ a {
     padding: 0;
   }
   .ico-menu{
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 1.7rem;
+    height: 1.7rem;
   }
   .logo img {
-    width: 3rem;
+    width: 1.7rem;
   }
 
   .content{
