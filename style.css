@@ -667,7 +667,7 @@ a {
   /*Banner Publicidad*/
 
   .section-pub{
-    padding-top: 22%;
+    padding-top: 40%;
   }
   
 
@@ -768,4 +768,25 @@ a {
   .social> a img{
     width: 3rem;
    }
+}
+
+@media (orientation: landscape)  {
+  .section-pub{
+    padding-top: 12%;
+  }
+
+  .card-pub h1{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .card-pub p {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .card-pub .btn{
+    font-size: 1rem;
+  }
+  
 }

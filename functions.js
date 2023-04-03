@@ -50,13 +50,13 @@ function scrollAnimation() {
                 if (acordion[i].getAttribute("data-target") == clase && ppt.indexOf("ocultaracor") == 1) {
                     valr.classList.add("mostraracor")
                     valr.classList.remove("ocultaracor")
-                }else{
+                } else {
                     valr.classList.remove("mostraracor")
                     valr.classList.add("ocultaracor")
                 }
                 const hack = document.querySelectorAll(`.${ppt[0]}`)
-                for(let j = 0; j < hack.length; j++){
-                    if(hack[j].getAttribute("id") != e.target.getAttribute("data-target").split("#")[1]){
+                for (let j = 0; j < hack.length; j++) {
+                    if (hack[j].getAttribute("id") != e.target.getAttribute("data-target").split("#")[1]) {
                         hack[j].classList.remove("mostraracor")
                         hack[j].classList.add("ocultaracor")
                     }
@@ -156,3 +156,5 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
 })
+
+
