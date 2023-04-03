@@ -16,6 +16,7 @@
 
 
 body {
+ 
   background-color: rgba(2, 92, 23, 0.292);
   font-weight: 300;
 }
@@ -124,7 +125,7 @@ nav {
 
 .Navbar>ul {
   display: flex;
-  gap: 0.9rem;
+  gap: 0.6rem;
   padding: 0.6rem;
   list-style: none;
 }
@@ -140,31 +141,55 @@ nav {
 .menuacor>a::after {
   content: '\025bc';
   font-size: 0.8rem;
+  padding-right: 0.3rem;
   cursor: pointer;
 }
 
 .Acordion {
-  width: 10rem;
-  position: fixed;
+  width: 80%;
+  position: absolute;
+  width: 14rem;
   z-index: 100;
   flex-direction: column;
   color: rgb(255, 255, 255);
   box-sizing: border-box;
-  border-radius: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.596);
-
-}
-
-.Acordion>ul {
+  border-radius: 0.2rem;
+  background-color: rgb(27, 194, 88);
+  transition: all 0.5s;
   padding: 0;
 }
 
+
+
 .Acordion>ul>li,
 .itemAcordion {
-  border: 1px solid blanchedalmond;
   list-style: none;
-  padding: 0 0.9rem;
+  padding: 1rem 1rem;
+  transition: all 0.2s ease-in;
+
 }
+
+.itemAcordion:hover{
+  
+  border-radius: 10px;
+  background-color: rgba(58, 255, 170, 0.534);
+}
+
+.mostraracor{
+  display: block;
+}
+
+.ocultaracor {
+  overflow: hidden;
+  
+}
+
+.ocultaracor:not(.mostraracor){
+  display: none;
+  transition: all 2s ease;
+}
+
+
 
 
 
@@ -289,15 +314,6 @@ h6 {
   width: 100%;
   height: 100%;
 }
-
-
-
-
-
-
-
-
-
 
 
 /*Utilidades*/
@@ -543,7 +559,6 @@ a {
   }
 
   .Navbar>ul {
-    overflow-x: hidden;
     position: absolute;
     top: 0;
     left: 100%;
@@ -551,16 +566,20 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aquamarine;
+    background-color: rgb(1, 58, 22);
     width: 100%;
     margin: auto;
     gap: 4rem;
     transition: all 0.5s ease-in-out;
    
   }
+  .Navbar > ul li {
+    text-align: center;
+    width: 100%;
+  }
 
  .Navbar > ul li a{
-  color: black;
+  color: rgb(222, 254, 244);
   font-size: 2rem;
  }
 
@@ -626,10 +645,24 @@ a {
     width: 2.3rem;
    }
 
+   .Acordion {
+    position:static;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: 0.8rem;
+    border-radius: 0.2rem;
+    background-color: rgba(10, 131, 36, 0.144);
+    transition: all 0.5s;
+    padding: 0;
+    text-align: start;
+  }
+
 }
 
 @media screen and (max-width:750px) {
   /*Banner Publicidad*/
+
   .section-pub{
     padding-top: 22%;
   }
@@ -662,8 +695,15 @@ a {
   }
 
   .Navbar > ul li a{
-    color: black;
+    color: rgb(222, 254, 244);
     font-size: 1.3rem;
+   }
+   .menuacor{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    text-align: center;
    }
 
    .ico-close {

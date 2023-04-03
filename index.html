@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.min.css">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
   <link rel=preconnect media="all" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
 <script src="functions.js" ></script>
@@ -24,15 +24,22 @@
       <div class="menu-cl">
         <i class="ico-close"></i>
       </div>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Nosotros</a></li>
-      <li><a href="#">Solicitud</a></li>
+      <li><a href="/">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li class="menuacor"><span href="#" data-target="#solicitudMenu" class="menu-toggle">Solicitud</span>
+        <ul class="Acordion ocultaracor" id="solicitudMenu">
+          <li class="itemAcordion">Lorem</li>
+          <li class="itemAcordion">Lorem ipsum dolor sit amet.</li>
+     
+        </ul>
+      </li>
+    
       <li><a href="#">Contacto</a></li>
       <li><a href="#">Oficinas</a></li>
       <li><a href="#">Noticias</a></li>
-      <li class="menuacor">
-        <a href="#">Resoluciones</a>
-        <ul class="Acordion d-none">
+      <li class="menuacor" >
+        <span class="menu-toggle" data-target="#resolucionMenu">Resoluciones</span>
+        <ul class="Acordion ocultaracor" id="resolucionMenu">
           <li class="itemAcordion">1</li>
           <li class="itemAcordion">2</li>
           <li class="itemAcordion">3</li>
@@ -40,6 +47,7 @@
           <li class="itemAcordion">5</li>
         </ul>
       </li>
+
       <li><a href="#">Tarifas</a></li>
     </ul>
   </nav>
