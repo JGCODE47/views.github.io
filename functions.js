@@ -35,6 +35,7 @@ function scrollAnimation() {
             window.scrollY > 450 ? document.querySelector(".Navbar").style.display = "none" : document.querySelector(".Navbar").style.display = "flex"
         } else {
             document.querySelector(".Navbar").style.display = "flex"
+            
         }
     })
 
@@ -133,7 +134,13 @@ function scrollAnimation() {
 
 
 
+window.addEventListener("resize", ()=>{
+    console.log("cambie")
+    if (window.innerWidth > 900) {document.querySelector(".menu-cl").style.display="none"}else{
+        document.querySelector(".menu-cl").click()
+    }
 
+})
 
 
 
