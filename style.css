@@ -1,3 +1,6 @@
+:root{
+  --green: #1BC258;
+}
 * {
   margin: 0;
   box-sizing: border-box;
@@ -154,7 +157,7 @@ nav {
   color: rgb(255, 255, 255);
   box-sizing: border-box;
   border-radius: 0.2rem;
-  background-color: rgb(27, 194, 88);
+  background-color: var(--green);
   transition: all 0.5s;
   padding: 0;
 }
